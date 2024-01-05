@@ -1,25 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;1,200;1,300;1,400&display=swap');
 *{
     margin: 0%;
     padding: 0%;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    /* background-color: rgba(212, 205, 218, 0.452); */
+    background: linear-gradient(white,rgba(163, 163, 199, 0.493));
 }
 nav ul{
     display: flex;
-    background-color: blueviolet;
+    /* justify-content: space-around; */
+    /* overflow: hidden; */
 }
 nav li{
     list-style: none;
     margin-right: 30px;
     padding: 10px;
+    text-align: center;
 }
 
 nav li a{
     text-decoration: none;
     font-size: 30px; /* font size basi kore */
     font-weight: 700;/* font ka mota kore */
-    color: aliceblue;
+    color: rgb(230, 224, 224);
+    text-align: center;
+    padding: 20px 16px;
 }
 nav li:hover{
     /* mouse jokon text er upor newa hobe tokon background color chenge hobe */
-    background-color: rgba(20, 20, 20, 0.993);
+    background-color: rgba(92, 223, 223, 0.39);
     /* border: 3px solid rgba(230, 226, 226, 0.329); */
 }
+img{
+    /* margin-left: 300px auto; */
+    background-size: cover;
+    /* clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 100% 80%, 53% 100%, 0% 80%, 0 0); */
+}
+#Blog{
+    background-image: url("image/cover pic.jpg");
+    height: 100vh;
+    /* clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 95%, 0 95%); */
+    /* padding: 20px; */
+    padding-bottom: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover  
+}
+/* Today match section start */
+#today{
+    text-align: center;
+    margin: 7%;
+    width: auto 90px;
+    height: 10%;
+    padding: 40px;
+    border: 2px solid rgba(250, 128, 114, 0.11);
+    border-radius: 100px;
+    background-color: rgba(135, 153, 153, 0.199);
+}
+#today h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: crimson;
+}
+#today p{
+    padding-top: 15px;
+    font-size: 20px;
+    
+}
+/* match section end */
+/* news section work start  */
+#parent{
+    display: flex;
+    justify-content: space-between;
+}
+#news{
+    width: 40%;
+    margin: 50px ;
+    /* 1.margin 2.border 3.padding eta dekle buja jabe */
+    border: 5px solid rgba(0, 128, 0, 0.205);
+    padding: 15px;
+    background-color: rgba(91, 185, 192, 0.438);
+    box-shadow: 5px 5px 5px rgba(49, 184, 173, 0.671);
+    border-radius: 10px;
+}
+/* news 1 end */
+/* news1 heading  */
+#news h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: rgb(187, 33, 22);
+}
+/* news2 */
+#news2{
+    width: 40%;
+    margin: 50px ;
+    border: 5px solid rgba(131, 184, 131, 0.205);
+    padding: 15px;
+    background-color: rgba(59, 44, 192, 0.329);
+    box-shadow: 5px 5px 5px rgba(67, 77, 167, 0.671);
+    border-radius: 10px;
+}
+#news2 h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: rgb(187, 33, 22)
+}
+/* news3 */
+#news3{
+    width: 40%;
+    margin: 50px ;
+    border: 5px solid rgba(131, 184, 131, 0.205);
+    padding: 15px;
+    background-color: rgba(154, 27, 185, 0.329);
+    box-shadow: 5px 5px 5px rgba(149, 43, 175, 0.671);
+    border-radius: 10px;
+}
+#news3 h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: rgb(187, 33, 22)
+}
+/* news section end */
+/* image add section start  */
+#picture h4{
+    text-align: center;
+    font-size: 30px;
+    padding: 15px ;
+    background: linear-gradient(rgb(104, 121, 197),rgba(202, 16, 16, 0.507));
+    margin: auto;
+    width: 20%;
+    box-shadow: 5px 5px 5px rgba(238, 23, 23, 0.541);
+    border-radius: 10px;
+}
+.match{
+    display: flex;
+    justify-content: space-around;
+}
+.match img{
+    width: 30%;
+    padding-top: 5%;
+}
+/* image section end */
+/* login section start */
+#container{
+    text-align: center;
+    margin: 40px auto;
+    border: 2px solid seagreen;
+    padding-top: 18px;
+    /* padding: 150px; */
+    width: 400px;
+    background: linear-gradient(rgba(43, 113, 192, 0.603),rgba(160, 20, 179, 0.603));
+    border-radius: 15px;
+    box-shadow: 7px 7px 8px purple;
+}
+#container h2{
+    font-size: 30px;
+    font-weight: 800;
+    color: crimson;
+    margin-bottom: 20px;
+}
+.group input{
+    /* email er vetor ar lekha gulo + box gulo */
+    margin: 5px;
+    padding: 5px;
+    width: 250px;
+    font-size: 17px;
+    font-weight: 800;
+}
+#field1 legend ,#field2{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+.test{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#field2{
+    margin-top: 25px;
+}
+.btn{
+    width: 25%;
+    height: 20%;
+    margin: 30px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: aliceblue;
+    background-color: rgba(2, 46, 15, 0.384);
+}
+/* footer start  */
+#end{
+    background-color: rgba(163, 163, 199, 0.493);
+    height: 20%;
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+/* end */
